@@ -1,14 +1,10 @@
-use std::{
-    collections::HashMap,
-    sync::{Arc, RwLock},
-};
+use std::collections::HashMap;
+use std::sync::{Arc, RwLock};
 
-use axum::{
-    http::StatusCode,
-    response::IntoResponse,
-    routing::{get, patch},
-    Router,
-};
+use axum::http::StatusCode;
+use axum::response::IntoResponse;
+use axum::routing::{get, patch};
+use axum::Router;
 use sqlx::PgPool;
 use tower_cookies::CookieManagerLayer;
 use tower_http::cors::CorsLayer;
